@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(fondo\ fachero.avif);
+    background-repeat:no-repeat ;
+    background-size:cover ;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content {
+    min-height: 80px;
+    background: linear-gradient(
+        90deg,
+        rgba(203,18,133,1)0%,
+        rgba(80,49,145,1)70%
+    );
+}
+.menu {
+ position: absolute;
+top: 10px;
+left: 0;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.logo {
+    font-size: 25px;
+    color: rgb(222, 222, 229);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(246, 242, 242);
+    display: block;
+    font-weight: bold;
+}
+
+
+.menu .navbar ul li a:hover {
+    color: rgb(136, 130, 130);
+}
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    
+
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+   
+}
+
+   
+
+    @media (max-width:600px) {
+
+.content {
+    min-height: 70px;
+}
+.menu {
+    top: 0;
+    padding: 20px;
+}
+.menu label {
+    display: initial;
+}
+.menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(203,18,133,1)0%,
+        rgba(80,49,145,1)70%
+    );
+    display: none;
+}
+
+.menu .navbar ul li {
+    width: 100%;
+}
+
+
+#menu:checked ~ .navbar {
+    display: initial;
+}
+.cabeza2 .logoo {
+    display: none;
+}
+
+
+    }
+
+  .cabeza2  .logoo {
+    cursor: pointer;
+    
+
+    }
+
+.cabeza2 .logoo img {
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 20px;
+    
+}    
+
+.cabeza2 .logoo img:hover {
+    transform: scale(1.2);
+}
+
+h1{
+    font-size: 90px;
+    text-align: center;
+    margin-top: 40px;
+    color: black;
+    text-shadow: 2px 4px ;
+}
+.quees{
+    text-align: left;
+    display: flex;
+    color: black;
+    padding: 20px;
+    margin: 15px 20px; }
+    p{
+        margin: 15px 30px;
+        color: black;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;}
+        
+        .modos{
+            text-align: left;
+            color: black;
+            padding: 15px;
+            margin: 15px 20px;
+            display: grid;
+            
+        }
+        .modos p{
+            margin: 15px 30px;
+            color: black;
+            font-size: 20px;
+            
+        }
+        .modos{
+            display: flex;
+            justify-content: center;
+            margin: 0%;
+        
+        }
+        .imagen{
+            width: 350px;
+            margin: 0 50px;
+        }
+        .texto1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+        .imagen1 :hover {
+            transform: scale(1.2);
+            
+          
+        }
+        .imagen2 :hover {
+            transform: scale(1.2);
+          
+        }
+        .imagen3 :hover {
+            transform: scale(1.2);
+          
+        }
+        .Contenedorvideos{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px;
+            justify-content: center;}
+
+            .Contenedorvideos div {
+                border-radius: 8px;
+                width: 40%; 
+                height: auto;
+                margin: 10px 20px;
+                box-shadow: 0px 0px 30px #000;
+                
+            }
+
+            .contactos {
+                display: flex;
+                justify-content: center;
+               margin: 0   ; }
+
+               .contactos i {
+                 font-size: 170px;
+                  color: black;
+                  margin: 65px;  
+               }
+               .chat1 {
+                   text-align: center;
+               }
+               p {
+                   color: black;
+                   font-size: 30px;
+               }
+               .contactos :hover{
+                   transition: all 0.3s ease 0s;
+                   transform: scale(1.2);
+               }
+
+
+               @media (max-width:600px) {
+                h1{
+                    font-size: 40px;
+                    text-align: center;
+                }
+                .quees { 
+                    flex-direction: column;
+                }
+                p {
+                    font-size: 15px;
+                }
+                .quees img {
+                    padding: 10px;
+                    margin: 5px 10px;
+                }
+              
+               
+               h1 {
+                font-size:40px ;
+                
+                                }
+                 .Contenedorvideos {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                   margin: 5px 10px;
+                   
+                }
+                .Contenedorvideos div {
+                    width: 20%;
+                    height: auto;
+                }
+
+                .modos {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                
+                }
+                .contactos {
+                    display: grid 
+                    
+                }
+
+               }
